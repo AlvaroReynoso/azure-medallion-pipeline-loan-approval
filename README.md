@@ -28,6 +28,11 @@ Este proyecto implementa un pipeline ETL completo de punta a punta utilizando la
 
 
 
+
+
+
+
+
 # Azure Medallion Pipeline – Loan Approval Data (English)
 
 This project implements a complete end-to-end ETL pipeline using the **Medallion architecture (Bronze, Silver, Gold)** on Azure, processing a bank loan approval dataset.
