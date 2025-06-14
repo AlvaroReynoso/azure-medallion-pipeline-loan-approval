@@ -18,12 +18,12 @@
 					"notebookPath": "/Users/alvaroreynoso1997@hotmail.com/bank_loans_medallon/ETL_databank_loans_config"
 				},
 				"linkedServiceName": {
-					"referenceName": "LS_databricks",
+					"referenceName": "AzureDatabricks1",
 					"type": "LinkedServiceReference"
 				}
 			},
 			{
-				"name": "Notebook1",
+				"name": "medallon_bronce_script",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
@@ -48,16 +48,16 @@
 					}
 				},
 				"linkedServiceName": {
-					"referenceName": "LS_databricks",
+					"referenceName": "AzureDatabricks1",
 					"type": "LinkedServiceReference"
 				}
 			},
 			{
-				"name": "Notebook1_copy1",
+				"name": "medallon_plata_script",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "Notebook1",
+						"activity": "medallon_bronce_script",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -75,16 +75,16 @@
 					"notebookPath": "/Users/alvaroreynoso1997@hotmail.com/bank_loans_medallon/ETL_databank_loans_plata"
 				},
 				"linkedServiceName": {
-					"referenceName": "LS_databricks",
+					"referenceName": "AzureDatabricks1",
 					"type": "LinkedServiceReference"
 				}
 			},
 			{
-				"name": "Notebook1_copy1_copy1",
+				"name": "medallon_oro_script",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "Notebook1_copy1",
+						"activity": "medallon_plata_script",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -102,7 +102,7 @@
 					"notebookPath": "/Users/alvaroreynoso1997@hotmail.com/bank_loans_medallon/ETL_databank_loans_oro"
 				},
 				"linkedServiceName": {
-					"referenceName": "LS_databricks",
+					"referenceName": "AzureDatabricks1",
 					"type": "LinkedServiceReference"
 				}
 			}
