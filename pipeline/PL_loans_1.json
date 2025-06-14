@@ -1,0 +1,115 @@
+{
+	"name": "PL_loans_1",
+	"properties": {
+		"activities": [
+			{
+				"name": "config_conexion_ADLS",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/alvaroreynoso1997@hotmail.com/bank_loans_medallon/ETL_databank_loans_config"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_databricks",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "config_conexion_ADLS",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/alvaroreynoso1997@hotmail.com/bank_loans_medallon/ETL_databank_loans_bronce",
+					"baseParameters": {
+						"path": "bankloansmedallon"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_databricks",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "Notebook1_copy1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Notebook1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/alvaroreynoso1997@hotmail.com/bank_loans_medallon/ETL_databank_loans_plata"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_databricks",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "Notebook1_copy1_copy1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Notebook1_copy1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/alvaroreynoso1997@hotmail.com/bank_loans_medallon/ETL_databank_loans_oro"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_databricks",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"folder": {
+			"name": "PL_loans_approval_medallon"
+		},
+		"annotations": []
+	}
+}
