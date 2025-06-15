@@ -72,9 +72,13 @@ Everything is managed with an organized storage system, creating three directori
 A secret scope was created in Databricks Secrets to store a key.
 With this mechanism, Databricks can connect to your container without having to embed the key in the code and expose it.
 
+**Modelo del Pipeline / Pipeline model**
+
+![Resume pipeline](https://github.com/user-attachments/assets/9be69689-700f-4943-9f51-13e5ba2e3d1f)
 
 
-Imagenes / Images
+
+**Imagenes / Images**
 ![PIPE](https://github.com/user-attachments/assets/daa9852b-fd1d-4f54-af7f-68c0cbfbe5ea)
 
 ![check databricks](https://github.com/user-attachments/assets/07730931-b891-4eb8-a63a-626fd57ae91e)
