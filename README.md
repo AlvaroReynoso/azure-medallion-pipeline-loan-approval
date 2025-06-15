@@ -66,6 +66,8 @@ Description: This medallion pipeline ingests data from a .csv file stored in a D
 Finally, the Gold layer creates clustering models, percentages, and averages to later prepare KPIs.
 Everything is managed with an organized storage system, creating three directories per layer.
 
+
+Imagenes / Images
 ![PIPE](https://github.com/user-attachments/assets/daa9852b-fd1d-4f54-af7f-68c0cbfbe5ea)
 
 ![check databricks](https://github.com/user-attachments/assets/07730931-b891-4eb8-a63a-626fd57ae91e)
