@@ -62,9 +62,13 @@ This project implements a complete end-to-end ETL pipeline using the **Medallion
 - Delta Lake and Medallion Architecture
 - PySpark and pipeline orchestration
 
-Description: This medallion pipeline ingests data from a .csv file stored in a Data Lake. The Bronze layer partially transforms the raw column structures to create a raw delta table model and store .parquet and .csv files. The Silver layer cleans inconsistent data and transforms data types for proper management.
+**Description**: This medallion pipeline ingests data from a .csv file stored in a Data Lake. The Bronze layer partially transforms the raw column structures to create a raw delta table model and store .parquet and .csv files. The Silver layer cleans inconsistent data and transforms data types for proper management.
 Finally, the Gold layer creates clustering models, percentages, and averages to later prepare KPIs.
 Everything is managed with an organized storage system, creating three directories per layer.
+
+🔐 Requisitos previo: 
+Se creo un secret Scope en databricks secrets para alojar una llave o key.
+Con este mecanismo, Databricks puede conectarse a tu contenedor sin necesidad de poner la clave en el código y exponerla.
 
 
 Imagenes / Images
