@@ -31,7 +31,9 @@ Descripcion: En este pipeline medallon se busca ingerir datos desde un archivo .
 Finalmente en la capa "oro" se busca crear modelos de agrupacion, porcentajes y promedios para posteriormente preparar KPIs.
 Todo se manejo con un sistema de almacenamiento ordenado y creando tres directorios por capa. 
 
-
+🔐 Requisitos: 
+Se creo un secret Scope en databricks secrets para alojar una llave o key.
+Con este mecanismo, Databricks puede conectarse a tu contenedor sin necesidad de poner la clave en el código y exponerla.
 
 # Azure Medallion Pipeline – Loan Approval Data (English)
 
@@ -66,9 +68,10 @@ This project implements a complete end-to-end ETL pipeline using the **Medallion
 Finally, the Gold layer creates clustering models, percentages, and averages to later prepare KPIs.
 Everything is managed with an organized storage system, creating three directories per layer.
 
-🔐 Requisitos previo: 
-Se creo un secret Scope en databricks secrets para alojar una llave o key.
-Con este mecanismo, Databricks puede conectarse a tu contenedor sin necesidad de poner la clave en el código y exponerla.
+🔐 Requirements:
+A secret scope was created in Databricks Secrets to store a key.
+With this mechanism, Databricks can connect to your container without having to embed the key in the code and expose it.
+
 
 
 Imagenes / Images
