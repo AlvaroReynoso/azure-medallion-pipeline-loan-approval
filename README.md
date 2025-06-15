@@ -27,6 +27,9 @@ Este proyecto implementa un pipeline ETL completo de punta a punta utilizando la
 - Delta Lake y arquitectura Medallón
 - PySpark y orquestación de pipelines
 
+Descripcion: En este pipeline medallon se busca ingerir datos desde un archivo .csv almacenado en Data Lake, luego en la capa "Bronce" se busca transformar parcialmente las estructuras de columnas crudas (raw estructured)  para crear un modelo de delta table crudo (raw) y almacenar .parquet y .csv, en capa plata se busco limpiar datos insconsistentes y transformar tipos de datos para un manejo correcto.
+Finalmente en la capa "oro" se busca crear modelos de agrupacion, porcentajes y promedios para posteriormente preparar KPIs.
+Todo se manejo con un sistema de almacenamiento ordenado y creando tres directorios por capa. 
 
 
 
@@ -58,3 +61,16 @@ This project implements a complete end-to-end ETL pipeline using the **Medallion
 - Data Engineering with Azure
 - Delta Lake and Medallion Architecture
 - PySpark and pipeline orchestration
+
+Description: This medallion pipeline ingests data from a .csv file stored in a Data Lake. The Bronze layer partially transforms the raw column structures to create a raw delta table model and store .parquet and .csv files. The Silver layer cleans inconsistent data and transforms data types for proper management.
+Finally, the Gold layer creates clustering models, percentages, and averages to later prepare KPIs.
+Everything is managed with an organized storage system, creating three directories per layer.
+
+![PIPE](https://github.com/user-attachments/assets/daa9852b-fd1d-4f54-af7f-68c0cbfbe5ea)
+
+![check databricks](https://github.com/user-attachments/assets/07730931-b891-4eb8-a63a-626fd57ae91e)
+
+![capas 3](https://github.com/user-attachments/assets/44bb79da-7907-4b81-8747-96baf5dab7c0)
+
+
+
