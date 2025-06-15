@@ -73,11 +73,13 @@ A secret scope was created in Databricks Secrets to store a key.
 With this mechanism, Databricks can connect to your container without having to embed the key in the code and expose it.
 
 **Arquitectura Medallón en Azure con Databricks / Medallion Architecture in Azure with Databricks**
+
 ![Resume pipeline](https://github.com/user-attachments/assets/6e00aa62-28bb-4d76-aec0-7ae357e12aa1)
 
 
 
 **Imagenes / Images**
+
 ![PIPE](https://github.com/user-attachments/assets/daa9852b-fd1d-4f54-af7f-68c0cbfbe5ea)
 
 ![check databricks](https://github.com/user-attachments/assets/07730931-b891-4eb8-a63a-626fd57ae91e)
