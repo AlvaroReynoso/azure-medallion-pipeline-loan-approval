@@ -80,12 +80,12 @@ With this mechanism, Databricks can connect to your container without having to 
 
 **Imagenes / Images**
 
-![PIPE](https://github.com/user-attachments/assets/daa9852b-fd1d-4f54-af7f-68c0cbfbe5ea)
-
 ##### config: Preparacion pre-bronze (raw)
 ##### Notebook1: Bronce (Bronze)
 ##### Notebook1_copy1: Plata (Silver)
 ##### Notebook1_copy1_copy1: Oro (Gold)
+![PIPE](https://github.com/user-attachments/assets/daa9852b-fd1d-4f54-af7f-68c0cbfbe5ea)
+
 ![check databricks](https://github.com/user-attachments/assets/07730931-b891-4eb8-a63a-626fd57ae91e)
 
 ![capas 3](https://github.com/user-attachments/assets/44bb79da-7907-4b81-8747-96baf5dab7c0)
