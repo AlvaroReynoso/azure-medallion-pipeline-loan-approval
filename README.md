@@ -9,7 +9,6 @@ Este proyecto implementa un pipeline ETL completo de punta a punta utilizando la
 - **Azure Databricks**: Transformación de datos con PySpark
 - **Delta Lake**: Formato de almacenamiento escalable
 - **Azure Data Lake Storage Gen2**: Almacenamiento de datos
-- **Power BI** *(opcional)*: Visualización de insights de negocio
 
 📁 **Estructura del Pipeline**:
 1. **Capa Bronce**: Ingesta de datos crudos desde archivo CSV.
